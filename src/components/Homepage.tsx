@@ -11,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Toaster } from "@/components/ui/toaster"
 import { useToast } from "@/hooks/use-toast"
-
 const Homepage = () => {
     const { toast } = useToast();
     const navigate = useNavigate();

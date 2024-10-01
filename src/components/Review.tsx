@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 //dotted background
+//options ko size
 const Review = () => {
     const location = useLocation();
     const { questions } = location.state as { questions: QuizQuestion[] };
