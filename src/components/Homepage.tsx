@@ -41,8 +41,8 @@ const Homepage = () => {
         <div className="flex items-center justify-center h-screen w-screen">
             <Toaster />
             <div className="flex items-center justify-center h-full w-[60rem]">
-                <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center gap-12 w-full text-2xl">
-                    <h1 className="font-semibold text-4xl pb-12">Setup Quiz</h1>
+                <form onSubmit={handleSubmit} className="flex flex-col items-center md:justify-center justify-start h-full gap-12 w-full text-2xl md:pt-0 pt-[5rem]">
+                    <h1 className="font-semibold text-4xl md:pb-12 pb-6">Setup Quiz</h1>
                     <div className="flex flex-col gap-5">
                         <label htmlFor="noOfQuestions">Number of Questions</label>
                         <Input
