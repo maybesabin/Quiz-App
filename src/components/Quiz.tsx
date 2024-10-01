@@ -127,7 +127,7 @@ const Quiz = () => {
                             <div className="flex items-center gap-6 flex-wrap w-full">
                                 {answers.map((item, index) => {
                                     return (
-                                        <Button key={index} className="md:text-[1rem] flex items-center justify-center flex-wrap text-xs md:max-w-[400px] max-w-[300px]" onClick={() => handleAnswerClick(item === questions[currentQuestion].correctAnswer)}>
+                                        <Button key={index} className="min-h-12 md:text-[1rem] flex items-center justify-center flex-wrap text-xs md:max-w-[400px] max-w-[300px]" onClick={() => handleAnswerClick(item === questions[currentQuestion].correctAnswer)}>
                                             {item}
                                         </Button>
                                     );

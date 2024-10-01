@@ -21,10 +21,10 @@ const Review = () => {
         correctAnswer: string;
         incorrectAnswers: string[];
     }
-    
+
     return (
         <div className="flex items-center justify-center h-screen w-screen overflow-x-hidden">
-            <div className="flex flex-col items-start justify-start p-12 h-full md:w-[60rem] w-full"> 
+            <div className="flex flex-col items-start justify-start p-12 h-full md:w-[60rem] w-full">
                 <Link className="pb-6 text-xs text-zinc-400 font-semibold" to="/">&lt; Return to homepage</Link>
                 <h1 className="text-4xl pb-12 font-semibold">Review</h1>
                 {questions.map((question, index) => {
@@ -38,7 +38,9 @@ const Review = () => {
                                 {options.map((option, optionIndex) => (
                                     <Button
                                         key={optionIndex}
-                                        className={`text-[1rem] ${optionStyles(option, correctAnswer)}`}
+                                        className={`
+                                        min-h-12 md:text-[1rem] flex items-center justify-center flex-wrap text-xs md:max-w-[400px] max-w-[300px]    
+                                        ${optionStyles(option, correctAnswer)}`}
                                     >
                                         {option}
                                     </Button>
