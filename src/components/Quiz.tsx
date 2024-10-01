@@ -103,7 +103,7 @@ const Quiz = () => {
     }
 
     return (
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center w-full h-screen">
             <Toaster />
             <div className={`flex flex-col items-start justify-center gap-12 text-2xl ${showScore ? "w-auto" : "w-[60rem]"} h-[45rem] p-6`}>
                 {showScore ? (
