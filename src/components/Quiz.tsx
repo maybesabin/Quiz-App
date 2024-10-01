@@ -109,7 +109,7 @@ const Quiz = () => {
                 {showScore ? (
                     <div className="flex items-center flex-col gap-4">
                         <h1 className="text-4xl font-semibold">Your Score is {score}</h1>
-                        <p className="text-[1rem] text-zinc-500 pb-5">{(score / questions.length) * 100}% accuracy</p>
+                        <p className="text-[1rem] text-zinc-500 pb-5">{((score / questions.length) * 100).toFixed(2)}% accuracy</p>
                         <div className="flex items-center gap-6">
                             <Button><Link to="/">Play again?</Link></Button>
                             <Button onClick={handleReview}>Review answers</Button>
